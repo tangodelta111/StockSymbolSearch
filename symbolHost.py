@@ -13,7 +13,7 @@ except lite.Error as e:
     print("Error %s:" % e.args[0])
     sys.exit(1)
     
-#example JSON recieved: {"userdemand":"Apple"}
+#GET request, where ?ask={Query}
 @route('/v1/finance/symbolQuery')
 def symbolQuery():
     if request.query.ask == "":
@@ -41,7 +41,7 @@ def symbolQuery():
     return {'status':'notfound'}
 
 
-run(host='stocksymbolquery-tuggycode.rhcloud.com', port=5000, debug=True)
+run(host='symbolLookup-boat.rhcloud.com', port=208, debug=True)
 
 
 
