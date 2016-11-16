@@ -41,7 +41,7 @@ def symbolQuery():
     return {'status':'notfound'}
 
 
-run(host='stocksymbollookup-tuggycode.rhcloud.com', port=80, debug=True)
+run(host='stocksymbolquery-tuggycode.rhcloud.com', port=5000, debug=True)
 
 
 
